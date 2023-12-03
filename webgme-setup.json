@@ -1,4 +1,29 @@
 {
-  "components": {},
-  "dependencies": {}
+  "components": {
+    "addons": {},
+    "decorators": {},
+    "layouts": {},
+    "plugins": {
+      "valid_piece_check": {
+        "src": "src/plugins/valid_piece_check",
+        "test": "test/plugins/valid_piece_check"
+      }
+    },
+    "routers": {},
+    "seeds": {
+      "othello_game": {
+        "src": "src/seeds/othello_game"
+      }
+    },
+    "visualizers": {}
+  },
+  "dependencies": {
+    "addons": {},
+    "decorators": {},
+    "layouts": {},
+    "plugins": {},
+    "routers": {},
+    "seeds": {},
+    "visualizers": {}
+  }
 }
