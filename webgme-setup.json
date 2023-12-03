@@ -13,6 +13,9 @@
     "seeds": {
       "othello_game": {
         "src": "src/seeds/othello_game"
+      },
+      "othello_G": {
+        "src": "src/seeds/othello_G"
       }
     },
     "visualizers": {}
