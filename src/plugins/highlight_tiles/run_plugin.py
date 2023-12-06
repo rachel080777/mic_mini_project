@@ -1,5 +1,5 @@
 """
-This script is called by the plugin-wrapper, valid_piece_check.js, which passes down the
+This script is called by the plugin-wrapper, highlight_tiles.js, which passes down the
 plugin context via arguments. These can be modified to include more information if needed.
 Notes:
  - The current working directory when called from a plugin is the root of your webgme repo.
@@ -10,9 +10,9 @@ Notes:
 import sys
 import logging
 from webgme_bindings import WebGME
-from valid_piece_check import valid_piece_check
+from highlight_tiles import highlight_tiles
 
-logger = logging.getLogger('valid_piece_check')
+logger = logging.getLogger('highlight_tiles')
 
 # Read in the context from sys.argv passed by the plugin
 logger.info('sys.args: {0}'.format(sys.argv))
@@ -38,7 +38,7 @@ logger.debug('name-space: {0}'.format(NAMESPACE))
 
 # Create an instance of WebGME and the plugin
 webgme = WebGME(PORT, logger)
-plugin = valid_piece_check(webgme, COMMIT_HASH, BRANCH_NAME, ACTIVE_NODE_PATH, ACTIVE_SELECTION_PATHS, NAMESPACE)
+plugin = highlight_tiles(webgme, COMMIT_HASH, BRANCH_NAME, ACTIVE_NODE_PATH, ACTIVE_SELECTION_PATHS, NAMESPACE)
 
 # Do the work
 plugin.main()
