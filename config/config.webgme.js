@@ -8,9 +8,7 @@ var config = require('webgme/config/config.default'),
 
 // The paths can be loaded from the webgme-setup.json
 config.plugin.basePaths.push(__dirname + '/../src/plugins');
-config.seedProjects.basePaths.push(__dirname + '/../src/seeds/othello_game');
-config.seedProjects.basePaths.push(__dirname + '/../src/seeds/othello_G');
-config.seedProjects.basePaths.push(__dirname + '/../src/seeds/test');
+config.seedProjects.basePaths.push(__dirname + '/../src/seeds/othello_seed');
 
 
 

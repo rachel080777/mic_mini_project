@@ -15,9 +15,9 @@ import signal
 import atexit
 import logging
 from webgme_bindings import WebGME
-from highlight_tiles import highlight_tiles
+from all_plugin import all_plugin
 
-logger = logging.getLogger('highlight_tiles')
+logger = logging.getLogger('all_plugin')
 
 # Modify these or add option or parse from sys.argv (as in done in run_plugin.py)
 PORT = '5555'
@@ -51,7 +51,7 @@ def exit_handler():
 atexit.register(exit_handler)
 
 commit_hash = webgme.project.get_branch_hash(BRANCH_NAME)
-plugin = highlight_tiles(webgme, commit_hash, BRANCH_NAME, ACTIVE_NODE_PATH, ACTIVE_SELECTION_PATHS, NAMESPACE)
+plugin = all_plugin(webgme, commit_hash, BRANCH_NAME, ACTIVE_NODE_PATH, ACTIVE_SELECTION_PATHS, NAMESPACE)
 
 # Do the work
 plugin.main()

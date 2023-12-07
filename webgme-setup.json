@@ -35,6 +35,14 @@
       "wxz": {
         "src": "src/plugins/wxz",
         "test": "test/plugins/wxz"
+      },
+      "flipping": {
+        "src": "src/plugins/flipping",
+        "test": "test/plugins/flipping"
+      },
+      "all_plugin": {
+        "src": "src/plugins/all_plugin",
+        "test": "test/plugins/all_plugin"
       }
     },
     "routers": {},
@@ -47,6 +55,9 @@
       },
       "test": {
         "src": "src/seeds/test"
+      },
+      "othello_seed": {
+        "src": "src/seeds/othello_seed"
       }
     },
     "visualizers": {
