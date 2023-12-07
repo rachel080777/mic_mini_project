@@ -43,6 +43,18 @@
       "all_plugin": {
         "src": "src/plugins/all_plugin",
         "test": "test/plugins/all_plugin"
+      },
+      "highlight_valid_tiles": {
+        "src": "src/plugins/highlight_valid_tiles",
+        "test": "test/plugins/highlight_valid_tiles"
+      },
+      "counting_pieces": {
+        "src": "src/plugins/counting_pieces",
+        "test": "test/plugins/counting_pieces"
+      },
+      "auto": {
+        "src": "src/plugins/auto",
+        "test": "test/plugins/auto"
       }
     },
     "routers": {},
