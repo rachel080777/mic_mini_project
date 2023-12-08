@@ -4,21 +4,9 @@
     "decorators": {},
     "layouts": {},
     "plugins": {
-      "valid_piece_check": {
-        "src": "src/plugins/valid_piece_check",
-        "test": "test/plugins/valid_piece_check"
-      },
-      "Python": {
-        "src": "src/plugins/Python",
-        "test": "test/plugins/Python"
-      },
       "undo_gamestate": {
         "src": "src/plugins/undo_gamestate",
         "test": "test/plugins/undo_gamestate"
-      },
-      "highlight_tiles": {
-        "src": "src/plugins/highlight_tiles",
-        "test": "test/plugins/highlight_tiles"
       },
       "flip_new_state": {
         "src": "src/plugins/flip_new_state",
@@ -40,10 +28,6 @@
         "src": "src/plugins/flipping",
         "test": "test/plugins/flipping"
       },
-      "all_plugin": {
-        "src": "src/plugins/all_plugin",
-        "test": "test/plugins/all_plugin"
-      },
       "highlight_valid_tiles": {
         "src": "src/plugins/highlight_valid_tiles",
         "test": "test/plugins/highlight_valid_tiles"
@@ -59,15 +43,6 @@
     },
     "routers": {},
     "seeds": {
-      "othello_game": {
-        "src": "src/seeds/othello_game"
-      },
-      "othello_G": {
-        "src": "src/seeds/othello_G"
-      },
-      "test": {
-        "src": "src/seeds/test"
-      },
       "othello_seed": {
         "src": "src/seeds/othello_seed"
       }
