@@ -88,6 +88,38 @@ or
 ```
 webgme start
 ```
+- copy http://127.0.0.1:8888 to your browser
+- Tada!! You are looking at my project now. Select the new_project to play with the plugins. Two states have already been created for you!
+  
+<img width="899" alt="Screenshot 2023-12-08 at 2 13 20 PM" src="https://github.com/sanjana3012/mic_mini_project/assets/143513691/04c7f004-8bf3-43d8-926a-5142c9719b85">
+
+## Where to run the plugins
+- The highlight valid tiles, count pieces, auto and undo can be run from the games folder.
+- The flip tiles has to be run from a tile in the board of a gamestate
+
+## Some notes for Carlos
+- The current player and current move actually point to the last placed player and last placed piece not to the player that is about to play or the move that is about to be placed.
+- In the games folder, you may need to make to sure that the currentGS pointer points to a gamestate if you delete the current gamestate from the object browser. If you delete a state using undo it will be fine.
+- My auto works correctly now!!!
+- Thank you for all your help to make this project actually work.
+
+## Steps I used to create my webgme project, seeds, etc
+- To create your own project and work with it you will need to do all of the above steps except cloning my git repo.
+  ```
+  webgme init <project_name>
+
+  ```
+- Navigate to the project directory, install the dependencies using the above steps then create a new seed using:
+``` webgme new seed -n <seed_name> -f <file_name.webgmex> <project_name>
+```
+- To create a new plugin :
+  ```
+  webgme new plugin --language Python <pluginID>
+  ```
+  
+
+  
+
 
 
 
