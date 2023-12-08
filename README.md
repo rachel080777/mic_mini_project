@@ -1,8 +1,13 @@
 # myproject
 ## Installation
-First, install the myproject following:
+First, you need to install the following for the Webgme project to work:
 - [NodeJS](https://nodejs.org/en/) (LTS recommended)
-- [MongoDB](https://www.mongodb.com/)
+- [Python] https://www.python.org/
+- [Docker desktop] https://www.docker.com/products/docker-desktop/
+- [Mongo] Pull the mongodb image in docker desktop and make a new container from it.
+  - Steps to create a new container:
+    
+
 
 Second, start mongodb locally by running the `mongod` executable in your mongodb installation (you may need to create a `data` directory or set `--dbpath`).
 
