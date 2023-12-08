@@ -118,7 +118,9 @@ webgme new seed -n <seed_name> -f <file_name.webgmex> <project_name>
 - To create a new plugin :
   ```
   webgme new plugin --language Python <pluginID>
+  
   ```
+
   
 
   
