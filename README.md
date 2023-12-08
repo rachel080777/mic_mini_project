@@ -1,6 +1,6 @@
 # mic_mini_project
 This is the final project for CS 6388 Model Integrated Computing (Vanderbilt University).
-# Description
+## Description
 This project is a WebGme Design Studio for playing the game [Othello/ Reversi](https://en.wikipedia.org/wiki/Reversi). WebGME is a web-based, collaborative meta-modeling environment with centralized version-controlled model storage. I used WebGme to make a meta-model of the Othello game consisting of concepts such as a board, tile, piece, etc and pointers such as currentPlayer, currentMove, etc. To read more about meta-modeling, visit this [website](https://webgme.readthedocs.io/en/latest/meta_modeling/what_is_meta_modeling.html). Next, I created plugins using the icore visualizer in WebGme. Plugins are custom extension points to a webgme-deployment that are intended to be used querying, interpreting, providing functionality and building models. The framework and API are designed to enable both server- and browser-side execution of the same code. At the point where a plugin is executed it will have access to the context it was invoked and webgme APIs such as core. The plugins I made for successful play of the game are highlight valid tiles, flip tiles, and count pieces. Additionally, the auto and undo plugins provide some interesting functionality. 
 ## Othello meta-model
 <img width="640" alt="Screenshot 2023-12-08 at 8 33 49 AM" src="https://github.com/sanjana3012/mic_mini_project/assets/143513691/20824210-efa5-4e6a-808b-f5276dac999b">
@@ -34,15 +34,20 @@ This project is a WebGme Design Studio for playing the game [Othello/ Reversi](h
 ## Installation
 ### Prerequisites
 First, you need to install the following for the Webgme project to work:
+- git using homebrew
+  ```
+  brew install git
+
+  ```
 - [NodeJS](https://nodejs.org/en/) (LTS recommended)
 - [Python](https://www.python.org/)
 - [Docker desktop](https://www.docker.com/products/docker-desktop/)
-- [Mongo]Pull the mongodb image in docker desktop and make a new container from it.
+- MongoDB. Pull the mongodb image in docker desktop and make a new container fro.
   - Steps to create a new container from the image:
     - Click the run button beside the mongo image and set the optional settings
 
-   Give a name to your container. I gave it sanjanadb.
-   Set host path as :
+Give a name to your container. I gave it sanjanadb.
+Set host path as :
 
 ```
 /Users/yourname/DB
@@ -53,10 +58,37 @@ Where DB is a folder I created to store all the database contents.
 ```
 /data/db
 ```
+### Dependencies and deployment
+Once you have all the preqreuisities, we can get to the fun part!
+- To run my project, first clone it using :
+
+```
+git clone https://github.com/sanjana3012/mic_mini_project.git
+
+```
+- Install webgme and webgme cli:
+
+```
+npm install webgme
+npm install -g webgme-cli
     
+```
+- Navigate to the project using cd and install the following dependencies:
+```
+npm i
+npm i webgme-bindings
+
+```
+- Start mongodb container in the docker desktop
+- Start the webgme server using:
+```
+node app.js
+```
+or
+```
+webgme start
+```
 
 
-Second, start mongodb locally by running the `mongod` executable in your mongodb installation (you may need to create a `data` directory or set `--dbpath`).
 
-Then, run `webgme start` from the project root to start . Finally, navigate to `http://localhost:8888` to start using myproject!
 
