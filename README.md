@@ -111,7 +111,9 @@ webgme start
   ```
 - Navigate to the project directory, install the dependencies using the above steps then create a new seed using:
   
-``` webgme new seed -n <seed_name> -f <file_name.webgmex> <project_name>
+```
+webgme new seed -n <seed_name> -f <file_name.webgmex> <project_name>
+
 ```
 - To create a new plugin :
   ```
