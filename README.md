@@ -120,6 +120,10 @@ webgme start
   webgme new plugin --language Python <pluginID>
   
   ```
+- To create a new visualizer:
+  ```
+  webgme new viz <vizID>
+  ```
 
   
 
