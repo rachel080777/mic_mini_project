@@ -97,11 +97,10 @@ webgme start
 - The highlight valid tiles, count pieces, auto and undo can be run from the games folder.
 - The flip tiles has to be run from a tile in the board of a gamestate
 
-## Some notes for Carlos
+## Some extra notes
 - The current player and current move actually point to the last placed player and last placed piece not to the player that is about to play or the move that is about to be placed.
 - In the games folder, you may need to make to sure that the currentGS pointer points to a gamestate if you delete the current gamestate from the object browser. If you delete a state using undo it will be fine.
 - My auto works correctly now!!!
-- Thank you for all your help to make this project actually work.
 
 ## Steps I used to create my webgme project, seeds, etc
 - To create your own project and work with it you will need to do all of the above steps except cloning my git repo.
