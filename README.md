@@ -76,7 +76,7 @@ npm install -g webgme-cli
 - Navigate to the project using cd and install the following dependencies:
 ```
 npm i
-npm i webgme-bindings
+npm i webgme-bindings   / pip install webgme-bindings
 
 ```
 - Start mongodb container in the docker desktop
